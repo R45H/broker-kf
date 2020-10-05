@@ -1,0 +1,111 @@
+$color-main: #a10a62;
+$color-main-light: #f7e6f0;
+$color-text: #424445;
+$color-text-dark: #2e2e2e;
+$color-light: #f2f2f2;
+
+$color-fb: #3b5998;
+$color-linkedin: #0a66c2;
+$color-insta: #bc2a8d;
+$color-tw: #00aced;
+$color-vk: #45668e;
+$color-yt: #b00;
+
+$point-sm: 576px;
+$point-md: 768px;
+$point-lg: 992px;
+$point-xl: 1200px;
+$point-xl: 1600px;
+
+$font-main: 'Open Sans', sans-serif;
+
+$header-height: 100px;
+
+$duration: .3s;
+
+// ----------------------------
+// МИКСИНЫ ДЛЯ ТЕКУЩЕГО ПРОЕКТА
+// ----------------------------
+
+// ----------------------------
+//
+//
+//
+// -------------
+// ОБЩИЕ МИКСИНЫ
+// -------------
+
+// Брейкпоинты
+@mixin screen-sm($direct: 'min') {
+
+  @media (if($direct == 'max', 'max-width: #{$point-sm - 1}', 'min-width: #{$point-sm}')) {
+    @content;
+  }
+}
+
+@mixin screen-md($direct: 'min') {
+
+  @media (if($direct == 'max', 'max-width: #{$point-md - 1}', 'min-width: #{$point-md}')) {
+    @content;
+  }
+}
+
+@mixin screen-lg($direct: 'min') {
+
+  @media (if($direct == 'max', 'max-width: #{$point-lg - 1}', 'min-width: #{$point-lg}')) {
+    @content;
+  }
+}
+
+@mixin screen-xl($direct: 'min') {
+
+  @media (if($direct == 'max', 'max-width: #{$point-xl - 1}', 'min-width: #{$point-xl}')) {
+    @content;
+  }
+}
+
+@mixin screen-xxl($direct: 'min') {
+
+  @media (if($direct == 'max', 'max-width: #{$point-xxl - 1}', 'min-width: #{$point-xxl}')) {
+    @content;
+  }
+}
+
+// ===========
+
+// Стили плейсхолдера инпутов
+@mixin input-placeholder() {
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// Сброс жёлтого выделения в хроме
+@mixin input-autofill($font-color: black, $font-color-selected: $font-color, $bg-color: white) {
+
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px $bg-color; /* Цвет фона */
+    -webkit-text-fill-color: $font-color; /* цвет текста */
+    color: $font-color; /* цвет текста */
+
+    &::selection {
+      -webkit-text-fill-color: $font-color-selected; /* цвет текста */
+      color: $font-color-selected; /* цвет текста */
+    }
+  }
+}
+
+// -------------
