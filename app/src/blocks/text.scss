@@ -33,11 +33,11 @@ $name: text;
         color: $color-white;
 
         &:hover {
-          color: $color-white-hover;
+          color: $color-main-hover;
         }
 
         &:active {
-          color: $color-white-active;
+          color: $color-main-active;
         }
       }
     }

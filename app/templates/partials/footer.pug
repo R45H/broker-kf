@@ -1,1 +1,49 @@
-footer.footer footer
+include ../components/social
+
+footer.footer.text.text_color_white
+  .container
+    .mb-5
+      .row
+
+        each section in footer_menu
+          .col-md-6.col-lg-4.col-xxl-3
+            .mb-3
+              strong.upper.text.text_size_lg
+                a.link.footer__menu-link(href= section.link)= section.name
+
+            .mb-5
+
+              each item in section.links
+                div
+                  a.link.footer__menu-link(href= item.link)= item.name
+
+    .mb-5
+      .row
+        .col-sm-3.col-md-4.mb-5.text-center.text-sm-left
+          +social(social)(class='social_invert')
+
+        .col-sm-9.col-md-8.col-xl-5.mb-5
+          div= 'Бесплатный звонок по России: '
+            strong
+              a.link.link_line_none.nowrap(href='tel:+78007000055') 8 800 700 00 55
+          div= 'Skype: '
+            strong.nowrap Brokerkf.client
+          div= 'Для рекламных предложений: '
+            strong
+              a.link.link_line_none.nowrap(href='mailto:reklama@brokerkf.ru') reklama@brokerkf.ru
+
+        .col-xl-3.mb-5
+          .row.justify-content-center.justify-content-sm-start.justify-content-xl-end
+            .col-auto.mb-4
+              img.footer__pay-icon(src='./img/icons/mir.svg' alt='mir')
+            .col-auto.mb-4
+              img.footer__pay-icon(src='./img/icons/visa.svg' alt='visa')
+
+    .mb-7
+      hr
+
+    .row.row-gap-5
+      .col-lg-8 КИТ Финанс (АО). Лицензии профессионального участника рынка ценных бумаг выданы на осуществление: дилерской деятельности № 040-06539-010000 от 14.10.2003 (выдана ФКЦБ России), брокерской деятельности № 040-06525-100000 от 14.10.2003 (выдана ФКЦБ России), деятельности по управлению ценными бумагами № 040-13670-001000 от 26.04.2012 (выдана ФСФР России), депозитарной деятельности № 040-06467-000100 от 03.10.2003 (выдана ФКЦБ России). Без ограничения срока действия.
+
+      .col-lg-4.text-center.text-lg-right
+        strong.nowrap © КИТ Финанс (АО), 2000-2020

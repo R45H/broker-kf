@@ -1,11 +1,11 @@
 $color-main: #a10a62;
 $color-main-hover: lighten($color-main, 10%);
-$color-main-active: darken($color-main, 10%);
+$color-main-active: lighten($color-main, 20%);
 $color-main-light: #fdeaf6;
 
 $color-text: #424445;
-$color-text-hover: lighten($color-text, 20%);
-$color-text-active: darken($color-text, 20%);
+$color-text-hover: lighten($color-text, 15%);
+$color-text-active: lighten($color-text, 30%);
 $color-text-light: #777;
 $color-text-dark: #2e2e2e;
 
@@ -22,12 +22,12 @@ $color-twitter: #00aced;
 $color-vk: #45668e;
 $color-youtube: #b00;
 
-$color-facebook-f-active: darken($color-facebook-f, 15%);
-$color-linkedin-in-active: darken($color-linkedin-in, 15%);
-$color-instagram-active: darken($color-instagram, 15%);
-$color-twitter-active: darken($color-twitter, 15%);
-$color-vk-active: darken($color-vk, 15%);
-$color-youtube-active: darken($color-youtube, 15%);
+$color-facebook-f-active: lighten($color-facebook-f, 10%);
+$color-linkedin-in-active: lighten($color-linkedin-in, 10%);
+$color-instagram-active: lighten($color-instagram, 10%);
+$color-twitter-active: lighten($color-twitter, 10%);
+$color-vk-active: lighten($color-vk, 10%);
+$color-youtube-active: lighten($color-youtube, 10%);
 
 $point-sm: 576px;
 $point-md: 768px;

@@ -2,4 +2,16 @@ $name: footer;
 
 .#{$name} {
   flex: 0 0 auto;
+  background-color: $color-text;
+  padding: 6rem 0;
+
+  &__menu-link {
+    display: inline-block;
+    padding: 1rem 0;
+    border: none;
+  }
+
+  &__pay-icon {
+    height: 30px;
+  }
 }

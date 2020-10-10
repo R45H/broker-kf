@@ -7,18 +7,6 @@ $name: link;
     border-bottom-color: transparent;
   }
 
-  &_color_white {
-    color: $color-white;
-
-    &:hover {
-      color: $color-white-hover;
-    }
-
-    &:active {
-      color: $color-white-active;
-    }
-  }
-
   &_color_text {
     color: $color-text;
 
