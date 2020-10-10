@@ -15,12 +15,19 @@ $color-white: white;
 $color-white-hover: darken($color-white, 15%);
 $color-white-active: darken($color-white, 30%);
 
-$color-fb: #3b5998;
-$color-linkedin: #0a66c2;
-$color-insta: #bc2a8d;
-$color-tw: #00aced;
+$color-facebook-f: #3b5998;
+$color-linkedin-in: #0a66c2;
+$color-instagram: #bc2a8d;
+$color-twitter: #00aced;
 $color-vk: #45668e;
-$color-yt: #b00;
+$color-youtube: #b00;
+
+$color-facebook-f-active: darken($color-facebook-f, 15%);
+$color-linkedin-in-active: darken($color-linkedin-in, 15%);
+$color-instagram-active: darken($color-instagram, 15%);
+$color-twitter-active: darken($color-twitter, 15%);
+$color-vk-active: darken($color-vk, 15%);
+$color-youtube-active: darken($color-youtube, 15%);
 
 $point-sm: 576px;
 $point-md: 768px;
@@ -36,6 +43,10 @@ $duration: .3s;
 
 %transition {
   transition: $duration ease;
+}
+
+%radius {
+  border-radius: 1.5rem;
 }
 
 // ----------------------------

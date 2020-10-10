@@ -9,7 +9,7 @@
   "homepage": "",
   "dependencies": {
     "bootstrap": "4.5.2",
-    "fontawesome": "4.*",
+    "fontawesome": "5.*",
     "jquery": "3.5.1",
     "normalize-css": "8.0.1",
     "slick-carousel": "1.8.1",

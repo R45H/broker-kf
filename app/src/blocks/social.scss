@@ -1,0 +1,182 @@
+$name: social;
+
+.#{$name} {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+
+  &__link {
+    @extend %transition;
+    @extend %radius;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    background-color: $color-text;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+
+    &:hover {
+      background-color: $color-text-hover;
+    }
+
+    &:active {
+      background-color: $color-text-active;
+    }
+
+    &_facebook-f {
+
+      &:hover {
+        background-color: $color-facebook-f;
+      }
+
+      &:active {
+        background-color: $color-facebook-f-active;
+      }
+    }
+
+    &_linkedin-in {
+
+      &:hover {
+        background-color: $color-linkedin-in;
+      }
+
+      &:active {
+        background-color: $color-linkedin-in-active;
+      }
+    }
+
+    &_instagram {
+
+      &:hover {
+        background-color: $color-instagram;
+      }
+
+      &:active {
+        background-color: $color-instagram-active;
+      }
+    }
+
+    &_twitter {
+
+      &:hover {
+        background-color: $color-twitter;
+      }
+
+      &:active {
+        background-color: $color-twitter-active;
+      }
+    }
+
+    &_vk {
+
+      &:hover {
+        background-color: $color-vk;
+      }
+
+      &:active {
+        background-color: $color-vk-active;
+      }
+    }
+
+    &_youtube {
+
+      &:hover {
+        background-color: $color-youtube;
+      }
+
+      &:active {
+        background-color: $color-youtube-active;
+      }
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_invert {
+
+    .#{$name}__link {
+      color: $color-text;
+      background-color: $color-white;
+
+      &:hover {
+        color: $color-text-hover;
+      }
+
+      &:active {
+        color: $color-text-active;
+      }
+
+      &_facebook-f {
+
+        &:hover {
+          color: $color-facebook-f;
+        }
+
+        &:active {
+          color: $color-facebook-f-active;
+        }
+      }
+
+      &_linkedin-in {
+
+        &:hover {
+          color: $color-linkedin-in;
+        }
+
+        &:active {
+          color: $color-linkedin-in-active;
+        }
+      }
+
+      &_instagram {
+
+        &:hover {
+          color: $color-instagram;
+        }
+
+        &:active {
+          color: $color-instagram-active;
+        }
+      }
+
+      &_twitter {
+
+        &:hover {
+          color: $color-twitter;
+        }
+
+        &:active {
+          color: $color-twitter-active;
+        }
+      }
+
+      &_vk {
+
+        &:hover {
+          color: $color-vk;
+        }
+
+        &:active {
+          color: $color-vk-active;
+        }
+      }
+
+      &_youtube {
+
+        &:hover {
+          color: $color-youtube;
+        }
+
+        &:active {
+          color: $color-youtube-active;
+        }
+      }
+    }
+  }
+}

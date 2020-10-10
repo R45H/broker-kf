@@ -1,4 +1,5 @@
 include ../mixins/link-arrow
+include ../components/social
 
 .container
   .mb-5
@@ -82,3 +83,10 @@ include ../mixins/link-arrow
       .btn.btn_size_lg .btn.btn_size_lg
     .mb-4
       button.btn.btn_disabled(disabled) button.btn.btn_disabled or [disabled]
+
+  .mb-5
+    .mb-4
+      +social(social)
+    .mb-4
+      .invert
+        +social(social)(class='social_invert')
