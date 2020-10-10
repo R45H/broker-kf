@@ -1,0 +1,6 @@
+include svg
+
+mixin link-arrow(data)
+  a.link.link_line_none.link-arrow(href= data.link || '#')
+    strong.upper= data.text
+    +svg('arrows', 'link-arrow__icon')

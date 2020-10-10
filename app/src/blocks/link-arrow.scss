@@ -1,0 +1,13 @@
+$name: link-arrow;
+
+.#{$name} {
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    height: 3rem;
+    width: 2.8rem;
+    margin-left: 2rem;
+    flex: none;
+  }
+}

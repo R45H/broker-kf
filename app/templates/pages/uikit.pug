@@ -1,3 +1,5 @@
+include ../mixins/link-arrow
+
 .container
   .mb-5
     .mb-4
@@ -39,6 +41,12 @@
         a.link.link_color_white(href='#') .link.link_color_white
     .mb-4
       a.link.link_color_text(href='#') .link.link_color_text
+
+  .mb-5
+    .mb-4
+      +link-arrow({
+        text: '.link-arrow'
+      })
 
   .mb-5
     .mb-4

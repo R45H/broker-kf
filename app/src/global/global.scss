@@ -50,6 +50,7 @@ a {
   &[class=''] {
     @extend %transition;
     color: $color-main;
+    fill: currentColor;
     border-bottom: 1px solid currentColor;
 
     &:hover {
@@ -60,6 +61,11 @@ a {
       color: $color-main-active;
     }
   }
+}
+
+b,
+strong {
+  font-weight: 600;
 }
 
 hr {
@@ -75,6 +81,10 @@ img {
   background: $color-text;
   margin: 0 -1rem;
   padding: 1rem;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 ::selection {
