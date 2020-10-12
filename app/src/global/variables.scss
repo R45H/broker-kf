@@ -31,6 +31,9 @@ $color-twitter-active: lighten($color-twitter, 10%);
 $color-vk-active: lighten($color-vk, 10%);
 $color-youtube-active: lighten($color-youtube, 10%);
 
+$gradient-1: linear-gradient(to bottom, $color-main-light, #e2bed4);
+$gradient-2: linear-gradient(to bottom, #f1edf0, #d9ccd4);
+
 $point-sm: 576px;
 $point-md: 768px;
 $point-lg: 992px;
@@ -42,13 +45,14 @@ $font-main: 'Open Sans', sans-serif;
 $header-height: 100px;
 
 $duration: .3s;
+$radius: 1.5rem;
 
 %transition {
   transition: $duration ease;
 }
 
 %radius {
-  border-radius: 1.5rem;
+  border-radius: $radius;
 }
 
 // ----------------------------

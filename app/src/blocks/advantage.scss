@@ -1,0 +1,117 @@
+$name: advantage;
+
+.#{$name} {
+  background: $color-main-light no-repeat bottom right / contain;
+  padding: 15px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include screen-sm() {
+    border-radius: $radius;
+    padding: 3rem;
+  }
+
+  &::before {
+    @extend %transition;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  &:hover {
+
+    &::before {
+
+      @include screen-sm() {
+        opacity: 1;
+      }
+    }
+
+    .#{$name} {
+
+      &__terms {
+
+        @include screen-sm() {
+          display: none;
+        }
+      }
+
+      &__text {
+
+        @include screen-sm() {
+          display: block;
+        }
+      }
+
+      &__btn {
+        background: $color-white;
+        border-color: $color-white;
+      }
+    }
+  }
+
+  &__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: auto;
+  }
+
+  &__terms {
+
+    @include screen-sm() {
+      min-height: 26.5rem;
+    }
+  }
+
+  &__text {
+
+    @include screen-sm() {
+      display: none;
+      min-height: 26.5rem;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $color-text-dark;
+      width: 90px;
+      height: 4px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_fill_1 {
+    background-image: url('../img/content/advantage/01.png'), $gradient-1;
+
+    &::before {
+      background-image: $gradient-1;
+    }
+  }
+
+  &_fill_2 {
+    background-image: url('../img/content/advantage/02.png'), $gradient-2;
+
+    &::before {
+      background-image: $gradient-2;
+    }
+  }
+
+  &_fill_3 {
+    background-image: url('../img/content/advantage/03.png'), $gradient-1;
+
+    &::before {
+      background-image: $gradient-1;
+    }
+  }
+}

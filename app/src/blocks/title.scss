@@ -2,7 +2,7 @@ $name: title;
 
 .#{$name} {
   font-size: 3.6rem;
-  font-weight: bold;
+  font-weight: 800;
   color: $color-text-dark;
   text-transform: uppercase;
   line-height: 1.3;
@@ -10,10 +10,12 @@ $name: title;
 
   &_size_lg {
     font-size: 6rem;
+    font-weight: 700;
   }
 
   &_size_xl {
     font-size: 9rem;
+    font-weight: 700;
   }
 
   &_color_white {

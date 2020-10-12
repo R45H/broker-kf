@@ -94,11 +94,35 @@ img {
   white-space: nowrap;
 }
 
+.row-gap {
+  margin-bottom: -15px;
+
+  @include screen-sm() {
+    margin-bottom: -30px;
+  }
+
+  [class^='col'] {
+    margin-bottom: 15px;
+
+    @include screen-sm() {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .row-gap-5 {
   margin-bottom: -3rem;
 
   [class^='col'] {
     margin-bottom: 3rem;
+  }
+}
+
+.col-no-gap-sm {
+
+  @include screen-sm('max') {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

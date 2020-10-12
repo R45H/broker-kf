@@ -1,0 +1,27 @@
+mixin advantage(data)
+  .advantage(class= data.fill ? `advantage_fill_${data.fill}`: null)
+    .advantage__wrap
+      .title.advantage__title
+        .mb-5= data.title
+
+      .text.text_size_lg
+        .advantage__terms.mb-5
+          .mb-5
+            div= data.subtitle.name
+
+            if data.subtitle.value.prefix
+              span.title.title_color_main.title_size_lg= `${data.subtitle.value.prefix} `
+
+            span.title.title_color_main.title_size_xl= data.subtitle.value.text
+
+            if data.subtitle.value.postfix
+              span.title.title_color_main= ` ${data.subtitle.value.postfix}`
+
+          if data.desc
+            div
+              div= data.desc.name
+              .title.title_color_main= data.desc.value
+
+        .advantage__text.mb-5= data.hidden_text
+
+      a.btn.btn_size_lg.btn_wide.advantage__btn(href= data.button.link)= data.button.name

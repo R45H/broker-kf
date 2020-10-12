@@ -1,4 +1,5 @@
 include ../mixins/link-arrow
+include ../mixins/advantage
 include ../components/social
 
 .container
@@ -87,3 +88,10 @@ include ../components/social
     .mb-4
       .invert
         +social(social)(class='social_invert')
+
+  .mb-5
+    .row.row-gap.justify-content-center
+
+      each val in advantage
+        .col-lg-6.col-xxl-4.col-no-gap-sm
+          +advantage(val)
