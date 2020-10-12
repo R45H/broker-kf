@@ -20,6 +20,7 @@ body {
   padding-top: $header-height;
   display: flex;
   flex-direction: column;
+  scrollbar-color: $color-main $color-gray;
 
   &.noscroll {
     overflow: hidden;
@@ -136,4 +137,20 @@ img {
 
 ::selection {
   background-color: darken($color-main-light, 7%);
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-main;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-main;
 }
